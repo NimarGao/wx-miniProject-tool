@@ -1,0 +1,17 @@
+<button bindtap="wxLogin">获取code</button>
+<view class="txt" bindtap="copy" data-txt="{{code}}">
+    {{code}}
+</view>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号code</button>
+<view class="txt" wx:if="{{!isPhone}}">请点击获取</view>
+<view wx:else>
+    <view class="txt" bindtap="copy" data-txt="{{phone.code}}">
+        code：{{phone.code}}
+    </view>
+    <view class="txt" bindtap="copy" data-txt="{{phone.iv}}">
+        iv：{{phone.iv}}
+    </view>
+    <view class="txt" bindtap="copy" data-txt="{{phone.encryptedData}}">
+        encryptedData：{{phone.encryptedData}}
+    </view>
+</view>

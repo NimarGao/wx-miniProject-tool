@@ -1,0 +1,11 @@
+.intro {
+    margin: 30px;
+    text-align: center;
+  }
+  button{
+      margin: 30rpx;
+  }
+  .txt{
+    margin: 0 auto;
+    text-align: center;
+  }
